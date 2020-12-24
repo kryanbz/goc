@@ -1,0 +1,128 @@
+
+<br>
+<br>
+<br>
+<br>
+<div *ngIf="hero">
+  <div class = "topDiv">
+    <img src="https://www.ub.edu.bz/wp-content/uploads/2016/08/UB_logo_2017.png" alt="UB Logo">
+    <br>
+    Course Outline <br>
+    Faculty of Science and Technology
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+    <label>
+      COURSE CODE (ID):
+    </label>
+      <input [(ngModel)]="hero.courseid" placeholder="Code"/>
+
+<br>
+    <label>
+      COURSE TITLE:
+    </label>
+      <input [(ngModel)]="hero.name" placeholder="Title"/>
+      <br>
+      <label>
+        CREDITS:
+      </label> 
+        <input [(ngModel)]="hero.credits" placeholder="Credits"/>
+        
+      <br>
+      <label>
+        SECTION:
+      </label> 
+      <input [(ngModel)]="hero.section" placeholder="Section"/>
+      <br>
+      <label>
+        COURSE MODALITY:
+      </label>
+      <input [(ngModel)]="hero.modality" placeholder="Modality"/>
+      <br>
+      <label>
+        COURSE MODALITY TYPE:
+      </label>  
+      <input [(ngModel)]="hero.modalitytype" placeholder="Modality Type"/>
+      <br>
+      <label>
+        COURSE INSTRUCTOR:
+      </label> 
+      <input [(ngModel)]="hero.instructor" placeholder="Instructor"/>
+      <br>
+      <label>
+        PROGRAM:
+      </label>  
+      <input [(ngModel)]="hero.program" placeholder="Program"/>
+      <br>
+      <label>
+        SEMESTER:
+      </label> 
+      <input [(ngModel)]="hero.semester" placeholder="Semester"/>
+      <br>
+      <label>
+        CLASS DAYS:
+      </label> 
+      <input [(ngModel)]="hero.days" placeholder="Days"/>
+      <br>
+      <label>
+        CLASS TIME:
+      </label> 
+      <input [(ngModel)]="hero.time" placeholder="Time"/>
+      <br>
+      <label>
+        CLASS VENUE:
+      </label>  
+      <input [(ngModel)]="hero.venue" placeholder="Venue"/>
+      <br>
+      <label>
+        COMMUNICATION TOOL:
+      </label>  
+      <input [(ngModel)]="hero.tool" placeholder="Tool"/>
+      <br>
+      <label>
+        COURSE PLATFORM:
+      </label> 
+      <input [(ngModel)]="hero.platform" placeholder="Platform"/>
+      <br>
+      <label>
+        PRE-REQUISITES: 
+      </label> 
+      <input [(ngModel)]="hero.prereq1" placeholder="Pre-requisites"/>
+      <br>
+      <label>
+        CO-REQUISITES:
+      </label> 
+      <input [(ngModel)]="hero.coreq" placeholder="Co-requisites"/>
+      <br>
+      <label>
+        FIELD TRIP(S):
+      </label> 
+      <input [(ngModel)]="hero.trips" placeholder="Trips"/>
+      <br>
+      <label>
+        OFFICE LOCATION:
+      </label> 
+      <input [(ngModel)]="hero.officelocation" placeholder="Office"/>
+      <br>
+      <label>
+        OFFICE/VIRTUAL HOURS:
+      </label> 
+      <input [(ngModel)]="hero.officehours" placeholder="Office Hours"/>
+      <br>
+      <label>
+        TELEPHONE:
+      </label> 
+      <input [(ngModel)]="hero.telephone" placeholder="Phone"/>
+      <br>
+      <label>
+        E-MAIL ADDRESS:
+      </label> 
+      <input [(ngModel)]="hero.email" placeholder="E-Mail"/>
+      <br>
+  </div>
+  <button id="printPageButton" (click)="goBack()">go back</button>
+  <button id="printPageButton" (click)="save()">save</button>
+  <button id="printPageButton" onClick="window.print();">Print</button>
+</div>
